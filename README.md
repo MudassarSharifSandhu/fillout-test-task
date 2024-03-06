@@ -29,7 +29,7 @@ A step-by-step series of examples that tell you how to get a development environ
 
 
 ## Request
-- Path: `/{formId}/filteredResponses`
+- Path: `api/{formId}/filteredResponses`
 - Method: `GET`
 - Query parameters: same as our [responses endpoint](https://www.fillout.com/help/fillout-rest-api#d8b24260dddd4aaa955f85e54f4ddb4d), except for a new `filters` parameter (JSON stringified):
 
@@ -39,7 +39,7 @@ A step-by-step series of examples that tell you how to get a development environ
 #### Get all Forms
 
 ```http
-  GET /{formId}/filteredResponses
+  GET api/{formId}/filteredResponses
 ```
 
 | Parameter | Type     | Description                |
@@ -53,5 +53,5 @@ A step-by-step series of examples that tell you how to get a development environ
 | `offset=0`      | `string` | **Optional**. Used for pagination, indicating the starting point for the query results. '0' means starting from the first result |
 | `includeEditLink=true`      | `string` | **Optional**. Suggests that the response should include edit links for the filtered responses. |
 | `sort=asc`      | `string` | **Optional**. Indicates the sorting order of the results should be ascending |
-| `filters=[{"id":"4KC356y4M6W8jHPKx9QfEy","condition":"equals","value":"Nothing much to share yet!"}]:`      | `string` | **Optional**. A JSON-encoded array of filter objects. Each object specifies a field to filter by, with properties like id, condition, and value. This filter will only return responses where the field with ID 4KC356y4M6W8jHPKx9QfEy equals the string "Nothing much to share yet!". |
+| `filters=[{"id":"4KC356y4M6W8jHPKx9QfEy","condition":"equals","value":"Nothing much to share yet!"}]`      | `string` | **Optional**. A JSON-encoded array of filter objects. Each object specifies a field to filter by, with properties like id, condition, and value. This filter will only return responses where the field with ID 4KC356y4M6W8jHPKx9QfEy equals the string "Nothing much to share yet!". |
 
