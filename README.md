@@ -36,7 +36,7 @@ A step-by-step series of examples that tell you how to get a development environ
 
 ## API Reference
 
-#### Get all items
+#### Get all Forms
 
 ```http
   GET /{formId}/filteredResponses
